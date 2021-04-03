@@ -9,17 +9,31 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-    </form>
-    <ul class="gallery"></ul>
-    <button type="button" class="load-more-btn">Load more</button>
+    <section class="section">
+      <div class="container">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images..."
+            class="form-control"
+            id="gallery-input"
+          />
+        </form>
+        <ul class="gallery"></ul>
+        <button type="button" class="btn btn-outline-warning load-more">
+          Load more
+        </button>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </body>
 </html>

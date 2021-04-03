@@ -1,12 +1,41 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
 .gallery {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2vw;
 }
-.gallery > .photo-card {
-  font-size: 5vw;
+
+.gallery > .gallery-item {
+  font-size: 2vw;
   padding: 0.5em;
-  background: gold;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.search-form {
   text-align: center;
 }
