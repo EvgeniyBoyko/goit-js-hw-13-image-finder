@@ -20,6 +20,7 @@ function onSearchPhoto(e) {
 
     refs.gallery.innerHTML = '';
     service.query = e.currentTarget.elements.query.value;
+    service.resetPage();
     service.fetchPhoto().then(createMarkupCard);
     
 }
