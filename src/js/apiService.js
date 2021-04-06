@@ -22,7 +22,6 @@ class Gallery {
     }
 
     set query(newQuery) {
-        console.log(newQuery);
         return this.search = newQuery;
     }
 
